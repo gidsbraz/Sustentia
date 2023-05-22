@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ed9511;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #feb780;
+}
+
+body {
+  background-color: #ffff;
+  font-family: "Inter", sans-serif;
+  background-image: url(./assets/fundo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 8rem;
+  filter: brightness(0) invert();
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #72915b;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+header div svg {
+  color: white;
+  width: 26px;
+  height: 26px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  align-items: center;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #f2a430;
+  transition: ease-in-out 0.5s;
+}
+
+#column {
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 6rem;
+
+  grid-area: text;
+}
+
+.img {
+  grid-area: img;
+}
+
+.text h1 {
+  color: #ed9511;
+  font-size: 23px;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  background-color: white;
+}
+
+.text h2 {
+  color: #1c1c1b;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 1rem;
+  background-color: white;
+}
+.cell {
+margin-top: 5rem;
+margin-left: 12rem;
+width: 30%;
+}
